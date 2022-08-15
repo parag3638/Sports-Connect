@@ -1,0 +1,24 @@
+<% layout('/layouts/boilerplate') -%>
+
+    <h1 class="mt-5 mb-5 text-center">Payment</h1>
+  <form method="POST" action="" class="mb-3 validated-form">
+    <div class="mb-3 w-50 m-auto">
+
+      <label for="date">Card Number</label>
+      <input class="form-control mb-3" type="text" id="date" name="review[date]" placeholder="XXXX-XXXX-XXXX">
+      <div class="valid-feedback">Looks good!</div>
+      <label class="form-label" for="seats">CVV</label>
+      <input class="form-control mb-3" type="text" id="seats" name="review[seats]" placeholder="XXX" required>
+      
+      <div class="valid-feedback">Looks good!</div>
+      <label for="date">Holder Name</label>
+      <input class="form-control mb-3" type="text" id="time" name="review[time]">
+      <div class="valid-feedback">Looks good!</div>
+      
+      
+    </div>
+    <div class="mb-3 text-center">
+      <button class="btn btn-success text-center">Confirm payment</button>
+    </div>
+  </form>
+

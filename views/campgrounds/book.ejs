@@ -1,0 +1,28 @@
+<% layout('/layouts/boilerplate') -%>
+
+<% if(currentUser){ %>
+    <h1 class="mt-5 mb-5 text-center">Book a slot</h1>
+  <form method="POST" action="/campgrounds/<%=campground._id%>/book/reviews" class="mb-3 validated-form" novalidate>
+    <div class="mb-3 w-50 m-auto">
+
+      <label class="form-label" for="amount">Amount</label>
+      <input class="form-control" type="text" id="amount" name="review[amount]" required>
+      <div class="valid-feedback">Looks good!</div>
+      <label for="date">Date</label>
+      <input class="form-control" type="date" id="date" name="review[date]">
+      <div class="valid-feedback">Looks good!</div>
+      <label for="date">Time</label>
+      <input class="form-control" type="time" id="time" name="review[time]">
+      <div class="valid-feedback">Looks good!</div>
+      <label class="form-label" for="seats">Seats</label>
+      <input class="form-control" type="text" id="seats" name="review[seats]" required>
+      
+      <div class="valid-feedback">Looks good!</div>
+      
+    </div>
+    <div class="mb-3 text-center">
+      <button class="btn btn-success text-center">Submit</button>
+    </div>
+  </form>
+
+  <% } %>

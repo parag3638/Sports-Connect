@@ -1,0 +1,39 @@
+<%- layout('layouts/boilerplate') %> 
+
+<div class="row mt-5 pt-5">
+  <div class="col-6">
+
+      <div class="row align-items-center">
+          <div class="col-md-12">
+            <h1>Welcome to Sports Connect!</h1>
+            <p class="pt-4">India's best sports slot booking system</p>
+          </div>
+      </div>
+
+  </div>
+  <div class="col-6">
+    <div class="container">
+      <div class="row align-items-center">
+        <h1 class="pb-4">Register</h1>
+<form action="/register" method="POST" class="validated-form" novalidate>
+  <div class="mb-3">
+    <label class="form-label" for="username">Username</label>
+    <input class="form-control" type="text" id="username" name="username" required>
+    <div class="valid-feedback">Looks good!</div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="email">Email</label>
+    <input class="form-control" type="email" id="email" name="email" required>
+    <div class="valid-feedback">Looks good!</div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="password">Password</label>
+    <input class="form-control" type="password" id="password" name="password" required>
+    <div class="valid-feedback">Looks good!</div>
+  </div>
+  <button id="regbtn" class="btn btn-success">Register</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
